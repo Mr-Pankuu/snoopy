@@ -15,12 +15,12 @@ e = lower_case_string.count("e")
 true = t + r + u + e
 
 # Now for love
-l = lower_case_string.count("l")
+x = lower_case_string.count("l")
 o = lower_case_string.count("o")
 v = lower_case_string.count("v")
 e = lower_case_string.count("e")
 
-love = l + o + v + e
+love = x + o + v + e
 
 love_score = str(true) + str(love)
 love_score = int(love_score)

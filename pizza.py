@@ -15,6 +15,7 @@ elif size == "l":
 else:
     print("Unknown key pressed")
 
+
 if add_pepperoni == "y":
     if size == "s":
         bill += 2
