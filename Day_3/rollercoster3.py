@@ -13,9 +13,8 @@ if height > 120:
     if age < 18:
         bill = 12
         print("Your ticket fee is 12$")
-    photo = input(
-        "Do you want a picture (it take only 3$)? Y for yes or N for no ")
-    if photo == "y":
+    photo = input("Do you want a picture (it take only 3$)? Y for yes or N for no ")
+    if photo == "y": 
         bill = bill + 3
 
         print(f"Your total bill is :{bill}")
