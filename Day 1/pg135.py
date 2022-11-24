@@ -25,4 +25,4 @@ love = l + o + v + e
 
 love_score = str(true)  + str(love)
 
-print("Your 
+print("Your ")
