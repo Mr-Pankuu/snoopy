@@ -5,10 +5,10 @@ MDScreen:
     MDFloatLayout:
         md_bg_color: 1,1,1,1
         Image:
-            source:"C:\python_program\kivy-thelab\avishkar\can logo🥄.png"
+            source:"logo.png"
             pos_hint: {"center_x":0.18,"center_y":0.95}
         Image:
-            source:"C:\python_program\kivy-thelab\avishkar\can logo.png"
+            source:"can_logo.png"
             size_hint: .8,.8
             pos_hint: {"center_x":0.5,"center_y":0.65}
         MDLabel:
@@ -36,7 +36,7 @@ MDScreen:
                 root.manager.transition.direction ="left"
                 root.manager.current: "login" 
             canvas.before:
-                color:
+                Color:
                     rgb: (52,0,231,255)
                 RoundedRectangle:
                     size: self.size
@@ -53,8 +53,8 @@ MDScreen:
                 root.manager.transition.direction ="left"
                 root.manager.current: "signup"
             canvas.before:
-                color:
+                Color:
                     rgb: (52,0,231,255)
                 Line:
                     width: 1.2
-                    rounded_rectangle: self.x,self.y, self.width,5,5,5,100
+                    rounded_rectangle: self.x,self.y, self.width, self.height,5,5,5,5,100

@@ -44,7 +44,7 @@ MDScreen:
                 multiline: False
             MDFloatLayout:
                 pos_hint: {"center_x": .45,"center_y":0}
-                size_hint: .03
+                size_hint_y: .03
                 md_bg_color: rgba(178, 178, 178, 255)
         MDFloatLayout:
             size_hint: .7, .07
@@ -62,7 +62,7 @@ MDScreen:
                 multiline: False
             MDFloatLayout:
                 pos_hint: {"center_x": .45,"center_y":0}
-                size_hint: .03
+                size_hint_y: .03
                 md_bg_color: rgba(178, 178, 178, 255)
         MDFloatLayout:
             size_hint: .7, .07
@@ -81,7 +81,7 @@ MDScreen:
                 password: True
             MDFloatLayout:
                 pos_hint: {"center_x": .45,"center_y":0}
-                size_hint: .03
+                size_hint_y: .03
                 md_bg_color: rgba(178, 178, 178, 255)
         Button:
             text: "SIGNUP"
@@ -90,7 +90,7 @@ MDScreen:
             background_color: 0,0,0,0
             font_name: "BPoppins"
             canvas.before:
-                color:
+                Color:
                     rgb: rgba(52,0,231,255)
                 RoundedRectangle:
                     size: self.size
@@ -123,11 +123,11 @@ MDScreen:
             size_hint: .48, .07
             pos_hint: {"center_x": .5,"center_y": .1}
             Image:
-                source: "assets/google.png"   
+                source: "google.png"   
             Image:
-                source: "assets/facebook.png" 
+                source: "facebook.png" 
             Image:
-                source: "assets/apple.png" 
+                source: "apple.png" 
         MDLabel:
             text: "Allready have an account?"
             font_name: "BPoppins"
@@ -141,5 +141,5 @@ MDScreen:
             pos_hint: {"center_x": .79,"center_y": .04}
             color: rgba(52, 0 ,231, 255)
             on_release:
-                root.manager.transition.direction = "left"
-                root.manager.current = "login"
+                root.manager.transition.direction : "left"
+                root.manager.current: "login"
