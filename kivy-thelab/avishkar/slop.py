@@ -19,7 +19,7 @@ class SlopeApp(MDApp):
 
 
 if __name__ == "__main__":
-    LabelBase.register(name="MPoppins", fn_regular="Poppins-Medium.ttf")
-    LabelBase.register(name="BPoppins", fn_regular="Poppins-SemiBold.ttf")
+    LabelBase.register(name="Lato", fn_regular="Lato\\Lato-Regular.ttf")
+    LabelBase.register(name="Lato", fn_regular="Lato\\Lato-Bold.ttf")
 
     SlopeApp().run()
