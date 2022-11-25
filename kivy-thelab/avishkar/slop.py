@@ -12,11 +12,10 @@ Window.size = (310, 500)
 class SlopeApp(MDApp):
     def build(self):
         screen_manager = ScreenManager()
-        # screen_manager.add.widget(Builder.load_file("main.kv"))
+        screen_manager.add_widget(Builder.load_file("main.kv"))
         screen_manager.add_widget(Builder.load.file("login.kv"))
-        # screen_manager.add_widget(Builder.load_file("signup.kv"))
+        screen_manager.add_widget(Builder.load_file("signup.kv"))
         return screen_manager
-
 
 if __name__ == "__main__":
     LabelBase.register(name="MPoppins", fn_regular="Poppins-Medium.ttf")
