@@ -1,3 +1,5 @@
+#:kivy 2.1.0
+
 MDScreen:
     name: "login"
     MDFloatLayout:
@@ -12,12 +14,12 @@ MDScreen:
                 root.manager.transition.direction = "right"
                 root.manager.current = "main"
         MDLabel:
-            text: "w e l c o m e "
-            font_name: "BPoppins"
-            font_size: "26sp"
-            pos_hint: {"center_x": .6,"center_y": .85}
-            halign:"center"
-            color: rgba(0,0,59,255)
+             text: "w e l c o m e "
+             font_name: "BPoppins"
+             font_size: "26sp"
+             pos_hint: {"center_x": .6,"center_y": .85}
+             halign:"center"
+             color: rgba(0,0,59,255)
         MDLabel:
             text: "Sign in to continue"
             font_name: "MPopppins"
@@ -127,5 +129,5 @@ MDScreen:
             color: rgba(135, 133, 193, 255)
             on_release:
                 root.manager.transition.direction = "left"
-                root.manager.current = "signup"
+                root.manager.current="signup"
                 
